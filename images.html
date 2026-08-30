@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            background-color: #414141;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://images.pexels.com/photos/3532544/pexels-photo-3532544.jpeg" alt="no image" width="900px">
+    <img src="./samples-img.png" alt="no image" width="900px">
+
+    <picture>
+        <source media="(min-width: 10px)" srcset="./samples-img.png">
+        <img src="httpsss://images.pexels.com/photos/3532544/pexels-photo-3532544.jpeg" alt="No image">
+    </picture>
+
+    <!-- an Image map gernerator-->
+
+    <img src="sample-img.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="name()" target="" alt="" title="" href="" coords="653,187,504,161" shape="rect">
+        <area onclick="pass()" target="" alt="" title="" href="" coords="243,560,581,586" shape="rect">
+    </map>
+
+    <script>
+        function name(){
+            alert("you are Garv Kumar Rawal")
+        }
+        function pass(){
+            alert("you are pass")
+        }
+    </script>
+
+
+</body>
+
+</html>
