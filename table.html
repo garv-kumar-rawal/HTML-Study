@@ -6,7 +6,7 @@
     <title>Table Formating</title>
     <style>
         table {
-            width: 100%;
+            /* width: 100%; */
             border-collapse: collapse;
             text-align: center;
         }
@@ -15,10 +15,16 @@
             padding: 10px;
             border: 1px solid black;
         }
+        tr:nth-child(even) {
+            background-color: #a4a3a3;
+        }
     </style>
 </head>
 <body>
-    <table>
+    <table style="width: 100%;">
+        <colgroup>
+            <col span="2"; style="background-color: yellow;"/>
+        </colgroup>
         <tr>
             <th>country</th>
             <th>country code</th>
@@ -28,6 +34,33 @@
             <td>india</td>
             <td>91</td>
             <td>india@india.com</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>1</td>
+            <td>usa@usa.com</td>
+        </tr>
+        <tr>
+            <td>china</td>
+            <td>5</td>
+            <td>china@china.com</td>
+        </tr>
+        <tr>
+            <td>UK</td>
+            <td>0</td>
+            <td>uk@uk.com</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">country</th>
+            <td>USA</td>
+            <td>Jermany</td>
+        </tr>
+        <tr>
+            <th>code</th>
+            <td>1</td>
+            <td>5</td>
         </tr>
     </table>
 </body>
